@@ -2,7 +2,10 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-arr_invites = ['gwirejk8947', 'ownvio3', '32few34w', 'slcndie', 'owkcdijfewq']
+invites_list = ['7v[9cpv&:8-bNL)x', '%&NPmm2;7.AjCKWv', 'ySUb^Cfz.9EPh~Kt', 'PLbeBADA.+_)3<Uj', '3S2ykS4`$7#M&3KB',
+                '9t:/3D/Tgq!,NP:"', 'q5UY45g,xS,ER;2n', 'hJPWfsDuJx9Mcnpv', 'd2tFugWsVkmwPuC9', 'kaKJSwzKSPy9VrEP',
+                'tKFxKDHvUbue4rws', 'cFFJ79rLDJe3mr7k', 'HnL6KXayYJkXHeeV', '3gxm4ZvUJHBwPpBD', 'gF4vFxQjV2Z9fx2W',
+                'fhcMbk6B6LNWa2wY', '222LBNeE6gdSeYMM', '3XEz38HsybJu6V88', 'mAPpFnn94DpsLZLn', 'cB2mvzeE8aZTasWb']
 
 @app.route('/hi')
 def hi():
@@ -12,7 +15,7 @@ def hi():
 def check_invite():
     invite = request.args.get('code')
 
-    if invite in arr_invites:
+    if invite in invites_list:
         return 'Ok!'
     else:
         return 'Not Ok!'
