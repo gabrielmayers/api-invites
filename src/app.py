@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
@@ -13,12 +13,12 @@ def hi():
 
 @app.route('/check_invite', methods=['GET'])
 def check_invite():
-    invite = request.args.get('code')
+    invite = request.args.get('invite_code')
 
     if invite in invites_list:
-        return 'Ok!'
+        return jsonify('Valid invite!'), 200
     else:
-        return 'Not Ok!'
+        return jsonify('Invalid invite!'), 400
 
 ## TODO
 @app.route('/generate_invite', methods=['POST'])
