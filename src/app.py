@@ -16,6 +16,7 @@ def check_invite():
     invite = request.args.get('invite_code')
 
     if invite in invites_list:
+        invites_list.remove(invite)
         return jsonify('Valid invite!'), 200
     else:
         return jsonify('Invalid invite!'), 400
