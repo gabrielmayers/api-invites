@@ -20,6 +20,7 @@ def check_invite():
     else:
         return 'Not Ok!'
 
+## TODO
 @app.route('/generate_invite', methods=['POST'])
 def generate_invite():
 
