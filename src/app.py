@@ -8,7 +8,7 @@ invites_list = ['e9LGYg4yvT7jHzME', 'xvbZwaCjC4UrGKmG', 'xhyBaWmENMe6a5DZ', 'qJx
                 'fhcMbk6B6LNWa2wY', '222LBNeE6gdSeYMM', '3XEz38HsybJu6V88', 'mAPpFnn94DpsLZLn', 'cB2mvzeE8aZTasWb']
 
 @app.route('/', methods=['GET']) 
-def hi():
+def test():
     return 'Ok!'
 
 @app.route('/check_invite', methods=['GET'])
