@@ -1,1 +1,1 @@
-<img src=xxx:x \x2Fonerror=javascript:alert(1)>
+<img src="rewqf" onerror=alert(1)>
