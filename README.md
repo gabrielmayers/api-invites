@@ -1,1 +1,1 @@
-<img src=xss onerror=alert(1)>
+# API Invites
