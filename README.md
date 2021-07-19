@@ -1,1 +1,1 @@
-<img src="rewqf" onerror="alert(1)">
+<IMG SRC=jAVasCrIPt:alert('XSS')>
